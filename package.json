@@ -8,6 +8,8 @@
   "private": false,
   "dependencies": {
     "@graphql-hive/cli": "^0.14.3",
-    "@graphql-mesh/cli": "^0.70.3"
+    "@graphql-mesh/cli": "^0.70.3",
+    "@graphql-mesh/new-openapi": "^0.4.19",
+    "graphql": "^16.5.0"
   }
 }

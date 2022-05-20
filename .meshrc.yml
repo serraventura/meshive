@@ -1,0 +1,5 @@
+sources:
+  - name: Petstore
+    handler:
+      newOpenapi:
+        oasFilePath: https://petstore.swagger.io/v2/swagger.json
