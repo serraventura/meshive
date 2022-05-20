@@ -9,6 +9,6 @@ RUN npx mesh help
 
 COPY .meshrc.yml .
 
-RUN npx hive build
+RUN npx mesh build
 
 ENTRYPOINT ["npx", "hive"]
