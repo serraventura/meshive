@@ -1,0 +1,13 @@
+{
+  "name": "meshive",
+  "version": "0.0.1",
+  "description": "Mesh & Hive wrapper image",
+  "main": "index.js",
+  "author": "Thiago C. S. Ventura",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@graphql-hive/cli": "^0.14.3",
+    "@graphql-mesh/cli": "^0.70.3"
+  }
+}

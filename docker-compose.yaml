@@ -1,0 +1,6 @@
+version: '3.4'
+services:
+  meshive:
+    image: meshive-img
+    build: .
+    container_name: meshive-wrapper
