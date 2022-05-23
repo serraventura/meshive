@@ -4,8 +4,8 @@ WORKDIR /meshive
 
 RUN apk --no-cache add curl
 
-RUN curl -O https://raw.githubusercontent.com/serraventura/meshive/main/package.json
-RUN curl -O https://raw.githubusercontent.com/serraventura/meshive/main/start.sh
+RUN curl -O -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/serraventura/meshive/main/package.json
+RUN curl -O -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/serraventura/meshive/main/start.sh
 # COPY ./start.sh .
 
 RUN yarn install --frozen-lockfile

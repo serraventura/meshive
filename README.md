@@ -5,6 +5,12 @@ Mesh & Hive Wrapper to simplify Pipelines
 
 ```
 docker-compose up -d
+
+# Check Command
+docker run meshive schema:check --token fs78f68sd6f87sd87f6
+
+# Publish Command
+docker run meshive schema:publish --token fs78f68sd6f87sd87f6 --force
 ```
 
 ## Mesh config sample
@@ -24,10 +30,10 @@ sources:
 ## Hive Check command
 
 ```
-docker run -v $(pwd)/.meshrc.yml:/meshive/.meshrc.yml serraventura/meshive:latest schema:check --token 62c833ef4e0de057c998c5471ebcadbf
+docker run -v $(pwd)/.meshrc.yml:/meshive/.meshrc.yml serraventura/meshive:latest schema:check --token fs78f68sd6f87sd87f6
 ```
 
 ## Hive Publish command
 ```
-docker run -v $(pwd)/.meshrc.yml:/meshive/.meshrc.yml serraventura/meshive:latest schema:publish --token 62c833ef4e0de057c998c5471ebcadbf --force
+docker run -v $(pwd)/.meshrc.yml:/meshive/.meshrc.yml serraventura/meshive:latest schema:publish --token fs78f68sd6f87sd87f6 --force
 ```
