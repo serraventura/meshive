@@ -6,6 +6,9 @@
   "author": "Thiago C. S. Ventura",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "test": "npx hive help"
+  },
   "dependencies": {
     "@graphql-hive/cli": "^0.14.3",
     "@graphql-mesh/cli": "^0.70.3",

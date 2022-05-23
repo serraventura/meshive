@@ -1,6 +1,6 @@
 version: '3.4'
 services:
   meshive:
-    image: meshive-img
+    image: meshive
     build: .
-    container_name: meshive-wrapper
+    container_name: meshive
