@@ -6,6 +6,7 @@ RUN apk --no-cache add curl
 
 RUN curl -O https://raw.githubusercontent.com/serraventura/meshive/main/package.json
 RUN curl -O https://raw.githubusercontent.com/serraventura/meshive/main/start.sh
+# COPY ./start.sh .
 
 RUN yarn install --frozen-lockfile
 
@@ -13,9 +14,8 @@ RUN yarn install --frozen-lockfile
 RUN npx hive help
 RUN npx mesh help
 
+# In case this image is used locally we can copy Mesh config on build time
 COPY ./.meshrc.yml .
-
-RUN npx mesh build
 
 USER root
 RUN chmod a+x start.sh
